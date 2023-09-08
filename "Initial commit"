@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Are You an Idiot?</title>
+</head>
+<body>
+    <h1>Are You an Idiot?</h1>
+    <button id="yesButton">Yes</button>
+    <button id="noButton">No</button>
+    <p id="result"></p>
+
+    <script>
+        // Add a click event listener to the "Yes" button
+        document.getElementById("yesButton").addEventListener("click", function () {
+            // Display the result
+            document.getElementById("result").innerText = "I knew it, you are a Idiot!";
+        });
+
+        // Add a click event listener to the "No" button
+        document.getElementById("noButton").addEventListener("click", function () {
+            // Display a message that the "No" button doesn't work
+            document.getElementById("result").innerText = "No button doesn't work.";
+        });
+    </script>
+</body>
+</html>
